@@ -1,23 +1,20 @@
 body {
-    background-image: url(../assets/eight-ball.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-    background-size: 500px;
-    position: relative;
+    
 }
-
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
 
 #user-input {
     border: 1px solid black;
     width: 300px;
     height: 50px;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 3;
-    display: flex;
+    align-content: center;
     justify-content: center;
+    left: -145px;
 }
 
 #answer-area {
@@ -33,28 +30,32 @@ body {
     position: center; */
     position: absolute;
     color: pink;
-    top: 350px;
+    top: 240px;
 }
-/* 
+
 #eight-ball {
     position: relative;
-    z-index: 1;
+    display: block;
+    object-position: center;
+    top: 100px;
+    /* z-index: 1;
     margin-top: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-} */
+    width: 70%; */
+}
 
 #roll-button {
     border: 1px solid black;
+    align-items: center;
     width: 100px;
     height: 100px;
     position: absolute;
     z-index: 2;
-    margin: auto;
     color: black;
-    object-position: top;
+    top: 40px;
+    left: -40px;
 }
 
 .eight-ball-entire {
@@ -63,4 +64,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.user-action {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 500px;
 }
