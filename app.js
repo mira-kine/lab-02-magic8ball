@@ -22,10 +22,4 @@ rollButton.addEventListener ('click', () => {
     else if (userInput.value === '') {
         answerDisplay.textContent = 'are you there';
     }
-    // if (userInput.textContent === '') {
-    //     answerDisplay.textContent = 'are you there?';
-    // }
-    // else if (userInput.textContent != '') {
-    //     userInput.value = '';
-    // }
 });
