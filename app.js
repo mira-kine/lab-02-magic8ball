@@ -12,13 +12,20 @@ const getRandomNumber = (max) => {
 
 // set event listeners, put functions within
 rollButton.addEventListener ('click', () => {
-    const randomIndex = getRandomNumber(answers.length);  
-    let randomAnswer = answers[randomIndex];
-    answerDisplay.textContent = randomAnswer;
-    if (userInput === '') {
-        answerDisplay.textContent = 'are you there?';
-    }
-    else if (userInput) {
+    if (userInput.value !== '') {
+        const randomIndex = getRandomNumber(answers.length);  
+        let randomAnswer = answers[randomIndex];
+        answerDisplay.textContent = randomAnswer;
         userInput.value = '';
     }
+    
+    else if (userInput.value === '') {
+        answerDisplay.textContent = 'are you there';
+    }
+    // if (userInput.textContent === '') {
+    //     answerDisplay.textContent = 'are you there?';
+    // }
+    // else if (userInput.textContent != '') {
+    //     userInput.value = '';
+    // }
 });
