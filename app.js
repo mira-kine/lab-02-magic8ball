@@ -1,20 +1,24 @@
-// import functions and grab DOM elements
-
+//imports and DOM elements
 import { answers } from './answers.js';
 
+const rollButton = document.getElementById('roll-button');
+const answerDisplay = document.getElementById('answer-area');
+const userInput = document.getElementById('user-input');
 
+//generic randomizer function
 const getRandomNumber = (max) => {
     return Math.floor(Math.random() * max);
 };
-  // to generate a random answer
-const randomIndex = getRandomNumber(colors.length);
-console.log(randomIndex);
 
-const randomAnswer = getRandomNumber(answers.length);
-console.log(answers[randomAnswer]);
-
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new states
+// set event listeners, put functions within
+rollButton.addEventListener ('click', () => {
+    const randomIndex = getRandomNumber(answers.length);  
+    let randomAnswer = answers[randomIndex];
+    answerDisplay.textContent = randomAnswer;
+    if (userInput === '') {
+        answerDisplay.textContent = 'are you there?';
+    }
+    else if (userInput) {
+        userInput.value = '';
+    }
+});

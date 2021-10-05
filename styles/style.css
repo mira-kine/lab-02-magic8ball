@@ -16,8 +16,7 @@
     z-index: 2;
     margin-top: 270px;
     margin-left: 150px;
-    color: white;
-    
+    color: white; 
 }
 
 #eight-ball {
@@ -25,4 +24,15 @@
     z-index: 1;
     margin-top: 150px;
     display: flex;
+}
+
+#roll-button {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 500px;
+    margin-left: 150px;
+    color: black;
 }
