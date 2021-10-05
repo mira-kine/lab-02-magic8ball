@@ -5,6 +5,13 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Teko', sans-serif;
 }
 
 #user-input {
@@ -14,48 +21,39 @@ h1 {
     position: absolute;
     align-content: center;
     justify-content: center;
-    left: -145px;
+    left: -200px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    top: -120px;
 }
 
 #answer-area {
-    /* width: 11vw;
-    height: 10vh;
-    position: absolute;
-    z-index: 3;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5rem;
-    text-align: center;
-    position: center; */
     position: absolute;
     color: pink;
-    top: 240px;
+    top: 190px;
+    font-size: 1.2rem;
+    font-family: 'Teko', cursive;
 }
 
 #eight-ball {
     position: relative;
     display: block;
     object-position: center;
-    top: 100px;
-    /* z-index: 1;
-    margin-top: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%; */
+    top: 50px;
 }
 
 #roll-button {
     border: 1px solid black;
+    border-radius: 50%;
     align-items: center;
     width: 100px;
     height: 100px;
     position: absolute;
-    z-index: 2;
     color: black;
-    top: 40px;
-    left: -40px;
+    top: -150px;
+    left: 120px;
+    font-family: 'Teko', cursive;
+    font-size: 1.6rem;
 }
 
 .eight-ball-entire {
