@@ -2,6 +2,22 @@
 
 ## Making a plan
 
+### HTML (view)
+    * text area for question (dynamic)
+    * answer area (dynamic)
+    * submit button (static)
+    * rules (static)
+
+### State
+    * answer
+    * randomIndex
+
+### What events am I listening for
+    * button click
+        * Generate a random Index
+        * get the value of the answer
+        * display the answer on the page
+
 (bolded steps are mandatory, unbolded are for more advanced projects)
 
 1) **Make a drawing of your app. Simple "wireframes"**
