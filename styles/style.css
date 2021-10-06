@@ -1,5 +1,5 @@
 body {
-    
+    background-image: url(/assets/shooting-star.gif);
 }
 h1 {
     display: flex;
@@ -71,3 +71,4 @@ h2 {
     flex-direction: column;
     top: 500px;
 }
+
