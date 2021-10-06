@@ -15,10 +15,12 @@
 
 
     <title>Magic eight ball</title>
-    <audio hidden autoplay src="./assets/Soft-piano-song.mp3"></audio>
 </head>
 
 <body>
+    <div>
+        <audio controls src="./assets/Soft-piano-song.mp3"></audio>
+    </div>
         <h1>Magic 8-Ball</h1>
         <h2>Shake to find the answer you've been looking for.</h2>
         <div class="eight-ball-entire">
@@ -26,7 +28,7 @@
             <div id="eight-ball">
                 <img src="./assets/eight-ball.png" alt="magic eight ball">
             </div>
-            <div id="answer-area">Your answer here</div>
+            <div id="answer-area"></div>
             <div class="user-action">
                 <button id="roll-button">Shake me!</button>
                 <input id="user-input" type="text" placeholder= "input your question here">

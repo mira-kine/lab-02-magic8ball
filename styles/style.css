@@ -33,6 +33,8 @@ h2 {
     top: 190px;
     font-size: 1.2rem;
     font-family: 'Teko', cursive;
+    transition: ease-in;
+    transition-duration: 0.75s;
 }
 
 #eight-ball {
